@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Gather data from an API"""
 
 
@@ -25,6 +26,15 @@ for i in todos_data:
         nbr_task += 1
         if i["completed"] == 1:
             title_task.append(i["title"])
+
+
+""" 
+dc_names = {k: v for d in user_data for k, v in d.items()}
+dc_names = {}
+for d in range(len(user_data)):
+    dc_names.update(user_data[d])
+print(user_data[4]) 
+"""
 
 
 print(

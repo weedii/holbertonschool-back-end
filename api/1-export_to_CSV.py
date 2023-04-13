@@ -20,8 +20,8 @@ if __name__ == "__main__":
 
     filename = f"{id}.csv"
     with open(filename, 'w', newline='') as f:
-        writer = csv.writer(f)
+        # writer = csv.writer(f)
         for i in todos:
             f.write(
-                f"\"{i['userId']}\",\"{employee_name}\","
+                f"\"{id}\",\"{employee_name}\","
                 f"\"{i['completed']}\",\"{i['title']}\"\n")

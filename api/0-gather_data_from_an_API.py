@@ -27,8 +27,8 @@ for i in todos_data:
             title_task.append(i["title"])
 
 
-print(
-    f"Employee {user_response.json().get('name')} is done with tasks ({len(title_task)}/{nbr_task}):")
+print("Employee {} is done with tasks ({}/{}):".format(
+    user_response.json().get('name'), len(title_task), nbr_task))
 
 for i in title_task:
-    print(f"\t{i}")
+    print("\t{}".format(i))

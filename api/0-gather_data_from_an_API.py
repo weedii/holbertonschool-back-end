@@ -1,6 +1,5 @@
-#!/usr/bin/python3
-
 '''Gather data from an API'''
+#!/usr/bin/python3
 
 
 import requests

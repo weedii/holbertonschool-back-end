@@ -22,5 +22,5 @@ if __name__ == "__main__":
     with open(filename, 'w', newline='') as f:
         writer = csv.writer(f)
         for i in todos:
-            writer.writerow([(i["userId"]), employee_name,
-                            i["completed"], i["title"]])
+            f.write(
+                f"\"{i['userId']}\",\"{employee_name}\",\"{i['completed']}\",\"{i['title']}\"\n")

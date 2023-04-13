@@ -23,4 +23,5 @@ if __name__ == "__main__":
         writer = csv.writer(f)
         for i in todos:
             f.write(
-                f"\"{i['userId']}\",\"{employee_name}\",\"{i['completed']}\",\"{i['title']}\"\n")
+                f"\"{i['userId']}\",\"{employee_name}\","
+                f"\"{i['completed']}\",\"{i['title']}\"\n")

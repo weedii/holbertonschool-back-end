@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
     print(
         f"Employee {user_response.json().get('name')}"
-        f"is done with tasks({len(title_task)}/{nbr_task}):")
+        f" is done with tasks({len(title_task)}/{nbr_task}):")
 
     for i in title_task:
         print(f"\t {i}")

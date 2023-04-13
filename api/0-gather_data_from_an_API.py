@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
-"""Gather data from an API"""
-
 import requests
 import json
 import sys
+
+"""Gather data from an API"""
+
 
 id = sys.argv[1]
 user_response = requests.get(
